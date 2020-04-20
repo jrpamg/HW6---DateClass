@@ -66,7 +66,7 @@ public class Date {
 			}
 		}
 		
-		while(this.year < other.year) {
+		while( (this.year < other.year) || (this.month < other.month) || (this.day < other.day) ) {
 			this.day++;
 			totalDays++;
 			if(this.day > this.daysIn(this.month)) {
@@ -77,20 +77,6 @@ public class Date {
 				this.month = 1;
 				this.year++;
 			}
-		}
-		
-		while(this.month < other.month) {
-			this.day++;
-			totalDays++;
-			if(this.day > this.daysIn(this.month)) {
-				this.month++;
-				this.day = 1;
-			}
-		}
-		
-		while(this.day < other.day) {
-			this.day++;
-			totalDays++;
 		}
 		
 		this.day = saveDay;
