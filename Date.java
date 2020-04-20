@@ -35,7 +35,7 @@ public class Date {
 		this.addDays(7*weeks);
 	}
 
-	public int daysTo(Date other) { //assume other date has to be in the future;
+	public int daysTo(Date other) { //assume other date has to be in the future; also assume date to other isn't included in total days
 
 		int saveDay = this.day;
 		int saveMonth = this.month;
