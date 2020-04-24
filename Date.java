@@ -40,7 +40,6 @@ public class Date {
 		int saveDay = this.day;
 		int saveMonth = this.month;
 		int saveYear = this.year;
-
 		int totalDays = 0;
 
 		if(other.year <= this.year) {
